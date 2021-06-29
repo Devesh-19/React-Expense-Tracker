@@ -14,14 +14,11 @@ const TransactionList = () => {
 				{transactions.map((transaction) => (
 					<Transaction
 						key={transaction.id}
+						id={transaction.id}
 						text={transaction.text}
 						amount={transaction.amount}
 					/>
 				))}
-				{/* <li className="minus">
-					Cash <span>$-400</span>
-					<button className="delete-btn">x</button>
-				</li> */}
 			</ul>
 		</>
 	);
